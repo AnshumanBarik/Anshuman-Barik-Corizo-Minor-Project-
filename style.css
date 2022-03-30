@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Josefin Sans',sans-serif;
+}
+header{
+     width: 100%;height: 100vh;
+     background-image: linear-gradient(rgba(95, 29, 29, 0.3),rgb(0,0,0,0.1)),url(./taj\ mahal.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+nav{
+     width:100%;height: 15vh;
+     background:black;
+     color:black;display: flex;justify-content:space-between;
+     align-items: center;
+    }
+.logo{
+    width: 30%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  #00b894;
+}
+ .menu{
+    width: 40%;
+    display: flex; justify-content:space-around;
+
+ }
+nav .menu a{
+      width: 25%;
+      text-decoration:none;color: azure;
+     font-weight: bold;     
+}
+.menu a:hover{
+    
+    color: #00b894;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;justify-content: center;align-items: center;
+}
+
+section h4{
+    color: white;
+     font-size: 40px;font-weight: 200;letter-spacing: 3px;
+     text-shadow: 1px 1px 2px black;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;justify-content: center;align-items: center;
+    
+}
+
+section h3{
+    margin: 30px 0 20px 0;
+    color: white;
+    font-size: 50px;font-weight: 200;letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 700;
+    display: flex;justify-content: center;align-items: center;
+    text-transform: uppercase;
+}
+section h2{
+    color: white;
+     font-size: 40px;font-weight: 200;letter-spacing: 3px;
+     text-shadow: 1px 1px 2px black;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: flex;justify-content: center;align-items: center;
+    
+}
+section p{
+font-size: 40px;
+color: white;
+word-spacing: 2px;
+margin-bottom: 25px;
+text-shadow: 1px 1px 1px beige;
+display: flex;justify-content: center;align-items: center;
+}
+div a{
+    padding: 8px 25px;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13 px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+   
+ }
+ .di{
+    position: absolute;
+    top: 80%;
+    right: 40%;
+}
+ .btone{
+     background-color:#00b894;
+     color: white;
+     
+    }
+    
+    .bttwo{
+        background-color:#00b894;
+        color:white;
+       
+       }
+       .btone:hover {
+           background-color: aliceblue;
+           color: black;
+       }
+       .bttwo:hover{
+       background-color: aliceblue;
+       color: black;
+       }
+    .change_content:after{
+         content:'';
+         animation: changetext 10s infinite linear;
+         color: #00b894;
+    }
+    @keyframes changetext{
+        0%{content: "   MUMBAI";}
+        20%{content: "  DELHI";}
+        40%{content: "  AGRA";}
+        60%{content: "  BHUBANESWAR";}
+        80%{content: "  KOLKATA";}
+        100%{content: " DARJEELING";}
+    }
+    .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+      }
+      :root {
+        --animate-duration: 800ms;
+        --animate-delay: 0.9s;
+      }
+    body{
+        background: #eef8ff;
+    }
+    footer{
+         width: 100%;
+         position:absolute;
+         
+         background: linear-gradient(to right,#b0e0f3,#fdc17d);
+         color: rgb(0, 0, 0);
+         padding: 25px 0 30px;
+          
+          
+         font-size: 13px;
+         line-height: 20px;
+    }
+.row{
+     width: 85%;
+     margin: auto;
+     display: flex;
+     position:relative;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+     
+} 
+.xyz{
+    width: 65%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    position:relative;
+    text-align:center;
+    text-transform: uppercase;
+    margin-top: 10%;
+
+}
+.col{
+   flex-basis: 25%;
+   padding: 10px;
+} 
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email id{
+    width: fit-content;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 20px 0;
+}
+ul li{
+     list-style: none;
+     margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+form .fa-solid{
+    font-size:18 ;
+    margin-right: 10px;
+
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+form button.fa-solid{
+font-size:16;
+color: #ccc;
+}
+
+.social .fa-brands 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background:rgb(251, 249, 249);
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+@media (max-width:700px){
+    footer{
+        bottom:unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3)
+    {
+        flex-basis: 100%;
+    }
+}
